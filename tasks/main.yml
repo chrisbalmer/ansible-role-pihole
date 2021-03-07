@@ -1,6 +1,6 @@
 ---
 - name: Get information on PiHole container
-  docker_container_info:
+  community.docker.docker_container_info:
     name: "{{ pihole_name }}"
   register: pihole_container
 

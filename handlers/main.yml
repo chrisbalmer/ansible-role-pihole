@@ -1,6 +1,6 @@
 ---
 - name: Restart PiHole
-  community.general.docker_container:
+  community.docker.docker_container:
     name: "{{ pihole_name }}"
     state: started
     restart: yes
